@@ -19,7 +19,7 @@ public class Main extends ListenerAdapter { ;
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         JDA jda = JDABuilder.createDefault("")
-              .addEventListeners(new Moderation())
+            //  .addEventListeners(new Moderation())
                 .addEventListeners(new SpamA())
                 .addEventListeners(new SpamB())
                 .addEventListeners(new SpamC())
