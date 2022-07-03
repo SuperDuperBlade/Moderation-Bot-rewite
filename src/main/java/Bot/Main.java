@@ -4,6 +4,7 @@ import Bot.Fun.Hello;
 import Bot.Fun.Quotes;
 import Bot.Moderation.Config.Ignore;
 import Bot.Moderation.Config.Toggle;
+import Bot.Moderation.Moderation;
 import Bot.Moderation.Spam.SpamA;
 import Bot.Moderation.Spam.SpamB;
 import Bot.Moderation.Spam.SpamC;
@@ -18,7 +19,7 @@ public class Main extends ListenerAdapter { ;
     public static void main(String[] args) throws LoginException, InterruptedException {
 
         JDA jda = JDABuilder.createDefault("")
-            //    .addEventListeners(new Moderation())
+              .addEventListeners(new Moderation())
                 .addEventListeners(new SpamA())
                 .addEventListeners(new SpamB())
                 .addEventListeners(new SpamC())
