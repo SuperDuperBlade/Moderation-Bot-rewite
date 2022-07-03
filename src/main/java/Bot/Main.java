@@ -17,7 +17,7 @@ import javax.security.auth.login.LoginException;
 
 public class Main extends ListenerAdapter { ;
     public static void main(String[] args) throws LoginException, InterruptedException {
-
+        System.out.println("bot has started");
         JDA jda = JDABuilder.createDefault("")
             //  .addEventListeners(new Moderation())
                 .addEventListeners(new SpamA())
